@@ -20,11 +20,11 @@ export function SearchBox() {
       <input
         value={value}
         onChange={(e) => setValue(e.target.value)}
-        placeholder="Name any subject…"
+        placeholder="Search for or create an article"
         aria-label="Article title"
         autoFocus
       />
-      <button type="submit">Conjure</button>
+      <button type="submit">Search</button>
     </form>
   );
 }

@@ -9,12 +9,11 @@ export default function Error({
 }) {
   return (
     <main className="article">
-      <div className="grain" aria-hidden />
       <nav className="topbar">
-        <a href="/">⟵ The Apocryphal Almanac</a>
+        <a href="/">Create-Wiki</a>
       </nav>
       <div className="notice">
-        <h1 className="notice-title">The ink ran dry</h1>
+        <h1 className="notice-title">Couldn’t generate this article</h1>
         <p className="notice-body">{error.message}</p>
         <button className="notice-action" onClick={() => reset()}>
           Try again

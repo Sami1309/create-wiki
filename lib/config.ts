@@ -10,6 +10,10 @@ export const config = {
   // Article text model (via OpenRouter). Opus 4.7 by default.
   textModel: process.env.OPENROUTER_MODEL ?? "anthropic/claude-opus-4.7",
 
+  // Cheap/fast model for the planning pre-pass: article summary, relevant-link
+  // selection, and image-prompt writing. Haiku by default.
+  planModel: process.env.OPENROUTER_PLAN_MODEL ?? "anthropic/claude-haiku-4.5",
+
   // Image model (via OpenRouter). Grok Imagine by default.
   imageModel: process.env.OPENROUTER_IMAGE_MODEL ?? "x-ai/grok-imagine-image-quality",
 
